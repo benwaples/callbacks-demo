@@ -15,7 +15,7 @@ describe('every array method', () => {
 
     const isNumber = number => typeof number === 'number'
     const actual = every(numbers, isNumber)
-
+    
     expect(actual).toEqual(false)
   })
 })

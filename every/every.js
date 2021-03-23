@@ -2,7 +2,8 @@ function every(array, callback) {
   let passable = true;
 
   for( item of array) {
-    if(!callback(item)) return false;
+    if(!callback(item)) 
+    passable = false;
   }
 
   return passable;
